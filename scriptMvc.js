@@ -1,3 +1,5 @@
+import {appController} from "./Controller/controller.js"
+
 window.addEventListener("load", () => {
 
     let headerContent = fetch("./header.html").then((res) => {return res.text()})
