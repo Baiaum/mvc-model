@@ -1,4 +1,4 @@
-import {appController} from "./Controller/controller.js"
+appController = import("./Controller/controller.js")
 
 window.addEventListener("load", () => {
 
