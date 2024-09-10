@@ -5,9 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer type="module" src="./script.js"></script>
     <script defer src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Modelo MVC</title>
 </head>
 <body>
     <header id="header"></header>
+    
+    <section class="block md:flex md:bg-transparent justify-end md:justify-between p-5 items-start bg-black flex-col md:flex-row min-h-screen" id="sec1">
+
+        <div 
+        class="
+            leading-loose flex flex-col gap-3 rounded 
+            md:ms-12 backdrop-blur-sm md:mb-96 mt-16 mx-auto 
+            text-wrap min-w-12 max-w-xl text-lg text-white shadow p-4
+          shadow-teal-950 hover:scale-105 group transition-all ease-in-out
+        ">
+
+            <h2 class="text-xl text-neutral-300">Quando nasceu</h2>
+            <p class="text-base group-hover:min-h-16 group-hover:text-wrap truncate">
+                A arquitetura MVC foi criada em 1979 pelo cientista da computação norueguês Trygve Reenskaug, que na época trabalhava na Xerox PARC.
+                A proposta do cientista da computação era criar um padrão de arquitetura que separasse o projeto em camadas, reduzindo assim a dependência entre elas. 
+            </p>
+
+        </div>
+
+        <div 
+        class="
+            leading-loose flex flex-col gap-3 rounded
+            md:ms-12 backdrop-blur-sm md:mt-auto mt-16 mx-auto
+            text-wrap min-w-12 max-w-xl text-lg text-white shadow
+            p-4 shadow-teal-950 hover:scale-105 group transition-all ease-in-out
+        ">
+
+            <h2 class="text-xl text-neutral-300">O que é?</h2>
+            <p class="text-sm group-hover:min-h-16 group-hover:text-wrap truncate">
+                O MVC sugere uma maneira para você pensar na divisão de responsabilidades, principalmente dentro de um software web. O princípio básico do MVC é a divisão da aplicação em três camadas: a camada de interação do usuário (view), a camada de manipulação dos dados (model) e a camada de controle (controller).
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="relative block md:flex md:bg-transparent justify-end md:justify-between p-5 items-start bg-stone-950 flex-col md:flex-row min-h-screen" id="sec2">
+        
+        <div 
+        class="
+            hover:z-50
+            md:sticky
+            md:top-72
+            flex flex-col gap-3 rounded
+            backdrop-blur-sm md:ms-auto mt-16 mx-auto
+            text-wrap min-w-12 max-w-xl text-lg
+          text-stone-200 shadow p-4 shadow-amber-700
+            hover:scale-105 group transition-all ease-in-out
+        ">
+
+            <h2 class="text-xl text-neutral-300">
+                <span class="text-amber-500">M</span> - Model
+            </h2>
+            <p class="text-base group-hover:min-h-16 group-hover:text-wrap truncate">
+                Essa classe também é conhecida como Business Object Model (objeto modelo de negócio). Sua responsabilidade é gerenciar e controlar a forma como os dados se comportam por meio das funções, lógica e regras de negócios estabelecidas.
+                Ele é o detentor dos dados que recebe as informações do Controller, válida se ela está correta ou não e envia a resposta mais adequada.
+            </p>
+
+        </div>
+
+        <div 
+        class="
+            hover:z-50
+            md:sticky
+            md:top-96
+            flex flex-col gap-3 rounded md:ms-auto
+            backdrop-blur-sm mt-16 mx-auto
+            text-wrap min-w-12 max-w-xl text-lg
+          text-stone-200 shadow p-4 shadow-amber-700
+            hover:scale-105 group transition-all ease-in-out
+        ">
+
+            <h2 class="text-xl text-neutral-300">
+                <span class="text-amber-500">V</span> - View
+            </h2>
+            <p class="text-base group-hover:min-h-16 group-hover:text-wrap truncate">
+                Essa camada é responsável por apresentar as informações de forma visual ao usuário. Em seu desenvolvimento devem ser aplicados apenas recursos ligados a aparência como mensagens, botões ou telas.
+                Seguindo nosso processo de comparação o View está na linha de frente da comunicação com usuário e é responsável transmitir questionamentos ao controller e entregar as respostas obtidas ao usuário. É a parte da interface que se comunica, disponibilizando e capturando todas as informação do usuário.
+            </p>
+
+        </div>
+
+        <div 
+        class="
+            hover:z-50
+            md:sticky
+            md:top-96
+            md:bottom-0
+            flex flex-col gap-3 rounded md:ms-auto
+            backdrop-blur-sm md:mt-auto mt-16 mx-auto
+            text-wrap min-w-12 max-w-xl text-lg
+          text-stone-200 shadow p-4 shadow-amber-700
+            hover:scale-105 group transition-all ease-in-out
+        ">
+
+            <h2 class="text-xl text-neutral-300">
+                <span class="text-amber-500">C</span> - Controller
+            </h2>
+            <p class="text-base group-hover:min-h-16 group-hover:text-wrap truncate">
+                A camada de controle é responsável por intermediar as requisições enviadas pelo View com as respostas fornecidas pelo Model, processando os dados que o usuário informou e repassando para outras camadas.
+                Numa analogia bem simplista, o controller  operaria como o ‘’maestro de uma orquestra’’  que permite a comunicação entre o detentor dos dados e a pessoa com vários questionamentos no MVC.
+            </p>
+
+        </div>
+        
+    </section>
+
+    <footer class="text-xs flex min-h-24 align-top flex-row justify-around bg-gradient-to-r from-stone-800 to-stone-900 text-zinc-200 text-center font-thin tracking-wider leading-relaxed py-2">
+
+        <div class="peer-hover:hidden">
+            Abner Rodrigues<br>
+            Estudante de Engenharia de Software<br>
+            Site responsivo com TailwindCSS - 2024@
+        </div>
+        <div class="truncate text-zinc-200">
+            <h3>Fontes</h3>
+           <a href="https://coodesh.com/blog/dicionario/o-que-e-arquitetura-mvc/#:~:text=A%20arquitetura%20MVC%20foi%20criada%20em%201979%20pelo%20cientista%20da,Model%2DView%2DController%E2%80%9D.">
+                Coodesh - O que é arquitetura MVC?
+           </a>
+        </div>
+    </footer> 
 </body>
 </html>

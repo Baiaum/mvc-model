@@ -1,0 +1,21 @@
+#sec1{
+    background-image: url("./img/wapp1.png");
+    background-size: cover;
+    
+}
+
+#sec2{
+    background-image: url("./img/wapp2.png");
+    background-size: cover;
+    
+}
+
+@media (max-width: 768px) {
+    #sec1{
+        background-image: none;
+    }
+    #sec2{
+        background-image: none;
+    }
+}
+
